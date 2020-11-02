@@ -1,0 +1,44 @@
+package com.irfan.output;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Input_Buffered {
+    public static void main(String[] args) throws IOException {
+//        Deklarasi
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        String nama, Asal_Sekolah, TTL, umur;
+
+
+        /*
+        Variabel kalimat = amplop
+        BufferedReader = Kertas
+        terminal = pulpen
+
+         */
+//Welcome
+        System.out.println("-------------Input Data Mahasiswa------------");
+//Input
+        System.out.print("Masukkan Nama \t\t: ");
+        nama = bufferedReader.readLine();
+
+        System.out.print("Asal Sekolah \t\t: ");
+        Asal_Sekolah = bufferedReader.readLine();
+
+        System.out.print("Masukkan TTL \t\t: ");
+        TTL = bufferedReader.readLine();
+
+        System.out.print("Masukkan Umur \t\t: ");
+        umur = bufferedReader.readLine();
+//Output
+        System.out.println("------------Output Data Mahasiswa--------------");
+        System.out.println("Nama \t\t\t: " + nama);
+        System.out.println("Asal Sekolah \t: " + Asal_Sekolah);
+        System.out.println("TTL \t\t\t: " + TTL);
+        System.out.println("Umur \t\t\t: " + umur);
+    }
+}
+
+

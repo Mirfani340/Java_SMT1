@@ -1,0 +1,31 @@
+package com.irfan.output;
+import java.util.Scanner;
+public class Input_Scanner {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
+
+        String nama, TTL, kelas, prodi, data = "Masukkan";
+        System.out.println("-------------Input Data Mahasiswa--------------");
+//Input
+        System.out.print(data + " Nama  :");
+        nama = input2.nextLine();
+
+        System.out.print(data + " Kelas :");
+        kelas = input.next();
+
+        System.out.print(data + " TTL  :");
+        TTL = input2.nextLine();
+
+        System.out.println(data + " Prodi  :");
+        prodi = input2.nextLine();
+
+//Output
+        System.out.println("------------Output Data Mahasiswa-------------");
+        System.out.println("Nama \t\t:" + nama);
+        System.out.println("Kelas \t\t:" + kelas);
+        System.out.println("TTL \t\t:" + TTL);
+        System.out.println("Prodi \t\t:" + prodi);
+
+    }
+}
